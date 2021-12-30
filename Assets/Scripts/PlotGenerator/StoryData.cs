@@ -47,7 +47,7 @@ public class StoryData
 
     public static void WriteStory(int poltiValue)
     {
-        Debug.Log(poltiValue + stories[poltiValue][0]);
+        // Debug.Log(poltiValue + stories[poltiValue][0]);
     }
 
 }

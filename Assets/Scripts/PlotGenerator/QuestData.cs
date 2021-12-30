@@ -18,6 +18,6 @@ public class QuestData
     public static void ChooseQuest()
     {
         quest = typeOfQuest[Random.Range(0, 7)];
-        Debug.Log("Your quest is: " + quest);
+        // Debug.Log("Your quest is: " + quest);
     }
 }

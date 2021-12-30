@@ -26,10 +26,16 @@ public class PlotGenerator : MonoBehaviour
         {
             Character character;
 
-            character = Instantiate(characterPrefab, new Vector3(i * 2.0F, 1, 0), Quaternion.identity);
+            character = Instantiate(characterPrefab, new Vector3(i * 2.0F, 1, 0), Quaternion.Euler(0, 180, 0));
 
-            if (character.type != "Fact")
-                character.CreateCharacter(i);
+            character.CreateCharacter(i);
+
+            character.transform.parent = gameObject.transform.GetChild(0);
+
+            if (character.gender == "m")
+                character.gameObject.transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+            else if (character.gender == "f")
+                character.gameObject.transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
 
             character.name = character.personageName;
         }
