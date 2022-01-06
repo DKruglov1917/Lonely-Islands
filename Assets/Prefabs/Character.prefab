@@ -2458,6 +2458,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cced23946ea68f149898e046d1cfa977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pfGroundItem: {fileID: 2043082332923755802, guid: ae6fb41d025ceaa4a9354dd5e526ec79,
+    type: 3}
+  Database: {fileID: 11400000, guid: 12cdf3138109dd946b96d9d82a9ddda2, type: 2}
   personage: 
   type: 
   gender: 
@@ -2476,6 +2479,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   curHP: 0
+  dead: 0
 --- !u!136 &3619275387557745610
 CapsuleCollider:
   m_ObjectHideFlags: 0

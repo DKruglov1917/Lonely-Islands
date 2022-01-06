@@ -15,7 +15,7 @@ public abstract class UserInterface : MonoBehaviour
     private InventoryObject _previousInventory;
     public Dictionary<GameObject, InventorySlot> slotsOnInterface = new Dictionary<GameObject, InventorySlot>();
 
-    public void OnEnable()
+    private void Awake()
     {
         CreateSlots();
         for (int i = 0; i < inventory.GetSlots.Length; i++)
@@ -67,7 +67,7 @@ public abstract class UserInterface : MonoBehaviour
     {
         EventTrigger trigger = obj.GetComponent<EventTrigger>();
         if (!trigger) { Debug.LogWarning("No EventTrigger component found!"); return; }
-        var eventTrigger = new EventTrigger.Entry {eventID = type};
+        var eventTrigger = new EventTrigger.Entry { eventID = type };
         eventTrigger.callback.AddListener(action);
         trigger.triggers.Add(eventTrigger);
     }

@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+    public GroundItem pfGroundItem;
+    public ItemDatabaseObject Database;
+
     private Animator animator;
     private Health health;
     private CapsuleCollider capsuleCollider;
@@ -39,10 +42,19 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (health.curHP <= 0 && animator.GetBool("dead") == false)
+        if (health.dead && animator.GetBool("dead") == false)
         {
             capsuleCollider.enabled = false;
             animator.SetBool("dead", true);
+
+            DropOnDeath();
         }
+    }
+
+    private void DropOnDeath() //relocate
+    {
+        GroundItem drop = Instantiate(pfGroundItem, transform.position, Quaternion.identity);
+        // drop.item.uiDisplay = Database.ItemObjects[5].uiDisplay;
+        drop.item = Database.ItemObjects[5];
     }
 }

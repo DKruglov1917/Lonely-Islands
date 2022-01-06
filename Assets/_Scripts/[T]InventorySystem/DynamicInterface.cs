@@ -33,7 +33,6 @@ public class DynamicInterface : UserInterface
             inventory.GetSlots[i].slotDisplay = obj;
             slotsOnInterface.Add(obj, inventory.GetSlots[i]);
         }
-        print("CreateSlots");
     }
     public Vector3 GetPosition(int i)
     {

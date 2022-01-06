@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiDisplay: {fileID: -1017397855643254206, guid: 31bc02f3aa1cf1747ab2a27512543a9c,
     type: 3}
+  characterDisplay: {fileID: 0}
   stackable: 1
   type: 0
   description: 
@@ -21,3 +22,4 @@ MonoBehaviour:
     Name: 
     Id: 6
     buffs: []
+  boneNames: []
