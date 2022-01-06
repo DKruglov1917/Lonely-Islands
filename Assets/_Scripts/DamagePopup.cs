@@ -11,7 +11,7 @@ public class DamagePopup : MonoBehaviour
     private void Awake()
     {
         textMesh = GetComponentInChildren<TextMeshProUGUI>();
-        player = GameObject.Find("First Person Player").transform.GetChild(0).gameObject;
+        player = GameObject.Find("Player").transform.GetChild(0).gameObject;
     }
 
     private void Update()
