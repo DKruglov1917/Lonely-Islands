@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    
+
     public Attribute[] attributes;
     public Attribute Agility => attributes[0];
-    
+
     private InventoryObject _equipment;
 
     private void Start()
     {
-        _equipment = GetComponent<Player>().equipment;
-        
+        _equipment = GetComponent<PlayerInv>().equipment;
+
         for (int i = 0; i < attributes.Length; i++)
         {
             attributes[i].SetParent(this);
@@ -25,13 +25,13 @@ public class PlayerStats : MonoBehaviour
             _equipment.GetSlots[i].onAfterUpdated += OnEquipItem;
         }
     }
-    
+
     public void AttributeModified(Attribute attribute)
     {
         //Debug.Log(string.Concat(attribute.type, " was updated! Value is now ", attribute.value.ModifiedValue));
     }
-    
-     public void OnRemoveItem(InventorySlot slot)
+
+    public void OnRemoveItem(InventorySlot slot)
     {
         if (slot.GetItemObject() == null)
             return;
@@ -41,10 +41,10 @@ public class PlayerStats : MonoBehaviour
                 print("Removed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
                       string.Join(", ", slot.AllowedItems));
                 break;
-            
+
             case InterfaceType.Equipment:
-             //    print("Removed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
-              //          string.Join(", ", slot.AllowedItems));
+                //    print("Removed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
+                //          string.Join(", ", slot.AllowedItems));
                 for (int i = 0; i < slot.item.buffs.Length; i++)
                 {
                     for (int j = 0; j < attributes.Length; j++)
@@ -54,7 +54,7 @@ public class PlayerStats : MonoBehaviour
                     }
                 }
                 break;
-            
+
             case InterfaceType.Chest:
                 print("Removed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
                       string.Join(", ", slot.AllowedItems));
@@ -74,7 +74,7 @@ public class PlayerStats : MonoBehaviour
                 print("Placed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
                       string.Join(", ", slot.AllowedItems));
                 break;
-            
+
             case InterfaceType.Equipment:
                 // print("Placed " + _slot.GetItemObject() + " on: " + _slot.parent.inventory.type + ", Allowed items: " +
                 //      string.Join(", ", _slot.AllowedItems));
@@ -87,12 +87,12 @@ public class PlayerStats : MonoBehaviour
                     }
                 }
                 break;
-            
+
             case InterfaceType.Chest:
                 print("Placed " + slot.GetItemObject() + " on: " + slot.parent.inventory.type + ", Allowed items: " +
                       string.Join(", ", slot.AllowedItems));
                 break;
-            
+
             default:
                 break;
         }

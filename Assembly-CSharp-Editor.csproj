@@ -36,8 +36,13 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Inventory\Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyManagerEditor.cs" />
-     <Compile Include="Assets\Inventory\Assets\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyDebuggerEditor.cs" />
+     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorUtil.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyManagerEditor.cs" />
+     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\NPCConversationEditor.cs" />
+     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorNode.cs" />
+     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\Editor\ConversationManagerEditor.cs" />
+     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorWindow.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyDebuggerEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

@@ -54,7 +54,10 @@ public class Character : MonoBehaviour
     private void DropOnDeath() //relocate
     {
         GroundItem drop = Instantiate(pfGroundItem, transform.position, Quaternion.identity);
-        // drop.item.uiDisplay = Database.ItemObjects[5].uiDisplay;
-        drop.item = Database.ItemObjects[5];
+        int rnd = Random.Range(0, Database.ItemObjects.Length);
+        drop.item = Database.ItemObjects[rnd];
+        drop.name = "DropItem";
+        //temp
+        drop.transform.SetParent(GameObject.Find("Items").transform);
     }
 }

@@ -47,12 +47,12 @@ public class PlayerAttack : MonoBehaviour
                     health.TakeDamage(weapon.damage);
 
                     GameObject bloodParticleClone = Instantiate(bloodParticle, hit.point, Quaternion.identity);
-                    bloodParticleClone.transform.parent = hit.transform;
+                    bloodParticleClone.transform.SetParent(hit.transform);
                     bloodParticleClone.transform.LookAt(hand.transform);
                     Destroy(bloodParticleClone, 2);
 
                     DamagePopup cloneDamagePopup = Instantiate(damagePopup, hit.point, Quaternion.identity);
-                    cloneDamagePopup.transform.parent = hit.transform;
+                    cloneDamagePopup.transform.SetParent(hit.transform);
                     cloneDamagePopup.Setup(weapon.damage);
                 }
             }
@@ -60,11 +60,4 @@ public class PlayerAttack : MonoBehaviour
             timer = 0;
         }
     }
-
-    // private async void Attack()
-    // {
-    //     DoAttack();
-    //     await Task.Delay((int)attackSpeed * 1000);
-    //     print("delayed");
-    // }
 }

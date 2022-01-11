@@ -5,12 +5,12 @@ using UnityEngine;
 public class PlayerEquipment : MonoBehaviour
 {
     private InventoryObject _equipment;
-    
+
     [Header("Equip Transforms")]
-    [SerializeField]private Transform offhandWristTransform;
-    [SerializeField]private Transform offhandHandTransform;
-    [SerializeField]private Transform weaponTransform;
-    
+    [SerializeField] private Transform offhandWristTransform;
+    [SerializeField] private Transform offhandHandTransform;
+    [SerializeField] private Transform weaponTransform;
+
     private BoneCombiner _boneCombiner;
     private Transform _pants;
     private Transform _gloves;
@@ -23,8 +23,8 @@ public class PlayerEquipment : MonoBehaviour
 
     void Start()
     {
-        _equipment = GetComponent<Player>().equipment;
-        
+        _equipment = GetComponent<PlayerInv>().equipment;
+
         _boneCombiner = new BoneCombiner(gameObject);
 
         for (int i = 0; i < _equipment.GetSlots.Length; i++)
@@ -107,27 +107,27 @@ public class PlayerEquipment : MonoBehaviour
                         case ItemType.Gloves:
                             Destroy(_gloves.gameObject);
                             break;
-                        
+
                         case ItemType.Boots:
                             Destroy(_boots.gameObject);
                             break;
-                        
+
                         case ItemType.Chest:
                             Destroy(_chest.gameObject);
                             break;
-                        
+
                         case ItemType.Pants:
                             Destroy(_pants.gameObject);
                             break;
-                        
+
                         case ItemType.Helmet:
                             Destroy(_helmet.gameObject);
                             break;
-                        
+
                         case ItemType.shield:
                             Destroy(_offhand.gameObject);
                             break;
-                        
+
                         case ItemType.Sword:
                             Destroy(_sword.gameObject);
                             break;
