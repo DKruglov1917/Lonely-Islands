@@ -123,8 +123,11 @@
      <Compile Include="Assets\_Scripts\[T]InventorySystem\GroundItem.cs" />
      <Compile Include="Assets\_Scripts\PlotGenerator\StoryData.cs" />
      <Compile Include="Assets\_Scriptable Objects\Items\Scripts\ItemBuff.cs" />
-     <Compile Include="Assets\_Scripts\Environment\Water\MakeSomeNoise.cs" />
-     <Compile Include="Assets\_Scripts\Environment\Water\WaterPlaneGenerator.cs" />
+     <Compile Include="Assets\_Scripts\Environment\Water\OldWater\MakeSomeNoise.cs" />
+     <Compile Include="Assets\_Scripts\Environment\Water\OldWater\WaterPlaneGenerator.cs" />
+     <Compile Include="Assets\_Scripts\Floater.cs" />
+     <Compile Include="Assets\_Scripts\Environment\Water\WaveManager.cs" />
+     <Compile Include="Assets\_Scripts\Environment\Water\WaterManager.cs" />
      <None Include="Assets\AssetStore\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\AssetStore\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\AssetStore\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
