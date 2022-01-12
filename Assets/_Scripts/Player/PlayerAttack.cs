@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    [SerializeField] private PlayerSound sound;
     public Camera cam;
     public GameObject hand, bloodParticle;
     public DamagePopup damagePopup;
@@ -55,6 +56,13 @@ public class PlayerAttack : MonoBehaviour
                     cloneDamagePopup.transform.SetParent(hit.transform);
                     cloneDamagePopup.Setup(weapon.damage);
                 }
+                else if (hit.collider.tag == "Radio")
+                {
+                    hit.transform.GetComponent<Radio>().ChooseSong();
+                    hit.transform.GetComponent<ObjectShake>().Shake();
+                }
+
+                sound.HitSound();
             }
 
             timer = 0;

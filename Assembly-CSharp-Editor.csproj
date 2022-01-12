@@ -36,13 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorUtil.cs" />
+     <Compile Include="Assets\AssetStore\DialogueEditor\Assets\Scripts\Editor\DialogueEditorUtil.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyManagerEditor.cs" />
-     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\NPCConversationEditor.cs" />
-     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorNode.cs" />
-     <Compile Include="Assets\DialogueEditor\Assets\Scripts\UI\Editor\ConversationManagerEditor.cs" />
-     <Compile Include="Assets\DialogueEditor\Assets\Scripts\Editor\DialogueEditorWindow.cs" />
+     <Compile Include="Assets\AssetStore\DialogueEditor\Assets\Scripts\Editor\NPCConversationEditor.cs" />
+     <Compile Include="Assets\AssetStore\DialogueEditor\Assets\Scripts\Editor\DialogueEditorNode.cs" />
+     <Compile Include="Assets\AssetStore\DialogueEditor\Assets\Scripts\UI\Editor\ConversationManagerEditor.cs" />
+     <Compile Include="Assets\AssetStore\DialogueEditor\Assets\Scripts\Editor\DialogueEditorWindow.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Editor\GraphyDebuggerEditor.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+     <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
