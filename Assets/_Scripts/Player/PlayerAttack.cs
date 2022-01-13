@@ -58,8 +58,8 @@ public class PlayerAttack : MonoBehaviour
                 }
                 else if (hit.collider.tag == "Radio")
                 {
-                    hit.transform.GetComponent<Radio>().ChooseSong();
-                    hit.transform.GetComponent<ObjectShake>().Shake();
+                    hit.transform.GetComponentInChildren<Radio>().ChooseSong();
+                    hit.transform.GetComponentInChildren<ObjectShake>().Shake();
                 }
 
                 sound.HitSound();

@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class PlayerSound : MonoBehaviour
 {
-    [SerializeField] private AudioClip hitSound, bulk;
-    private AudioSource audioSource;
-    private static bool isUnderWater;
+    [SerializeField] private AudioLowPassFilter audioLowPassFilter;
+    [SerializeField] private AudioClip _hit, _bulk, _underwater;
+    [SerializeField] private AudioSource audioSource;
+    private bool isUnderWater;
 
-    public static void Underwater(AudioLowPassFilter lowPassFilter)
+    public void HitSound()
     {
-        lowPassFilter.enabled = isUnderWater;
+        audioSource.PlayOneShot(_hit);
+    }
+
+    private void Underwater()
+    {
+        audioLowPassFilter.enabled = isUnderWater;
     }
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         isUnderWater = false;
     }
 
-    public void HitSound()
+    private void Update()
     {
-        audioSource.clip = hitSound;
-        audioSource.Play();
+        Underwater();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,7 +35,8 @@ public class PlayerSound : MonoBehaviour
         {
             isUnderWater = true;
 
-            audioSource.clip = bulk;
+            audioSource.PlayOneShot(_bulk);
+            audioSource.clip = _underwater;
             audioSource.Play();
         }
     }
@@ -40,5 +45,7 @@ public class PlayerSound : MonoBehaviour
     {
         if (other.gameObject.layer == 4)
             isUnderWater = false;
+
+        audioSource.Stop();
     }
 }
