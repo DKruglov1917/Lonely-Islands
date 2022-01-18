@@ -37,7 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\[T]InventorySystem\PlayerInv.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\_Scripts\Player\PlayerAttack.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_ExtensionMethods.cs" />
      <Compile Include="Assets\_Scriptable Objects\Items\Scripts\Item.cs" />
@@ -60,10 +60,10 @@
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Ram\G_RamGraph.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsText.cs" />
      <Compile Include="Assets\_Scripts\[T]InventorySystem\DynamicInterface.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\_Scripts\Environment\Objects\Radio.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Scripts\LevelReset.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Fps\G_FpsManager.cs" />
      <Compile Include="Assets\_Scriptable Objects\Stats\StatObject.cs" />
@@ -111,14 +111,14 @@
      <Compile Include="Assets\_Scripts\[T]InventorySystem\GroundItem.cs" />
      <Compile Include="Assets\_Scripts\PlotGenerator\StoryData.cs" />
      <Compile Include="Assets\_Scriptable Objects\Items\Scripts\ItemBuff.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Audio\G_AudioText.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Utility\WaypointProgressTracker.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_Singleton.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Utility\DragRigidbody.cs" />
      <Compile Include="Assets\_Scripts\PlotGenerator\CharacterData.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Scripts\CameraSwitch.cs" />
      <Compile Include="Assets\_Scripts\Environment\Objects\ObjectShake.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Util\G_FloatString.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
@@ -131,12 +131,12 @@
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\Shader\G_GraphShader.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
-     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scene\Customization Scripts\UpdateTextWithSliderValue.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Utility\ObjectResetter.cs" />
      <Compile Include="Assets\_Scripts\Environment\TileMap\Tile.cs" />
-     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
+     <Compile Include="Assets\AssetStore\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
      <Compile Include="Assets\_Scriptable Objects\Inventory\Scripts\InventoryObject.cs" />
      <Compile Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Scripts\GraphyManager.cs" />
@@ -195,7 +195,7 @@
      <None Include="Assets\AssetStore\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\AssetStore\Inventory\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
      <None Include="Assets\AssetStore\Inventory\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
-     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+     <None Include="Assets\AssetStore\SampleScenes\Shaders\Skybox-Procedural.shader" />
      <None Include="Assets\AssetStore\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\AssetStore\Inventory\Tayx\Graphy - Ultimate Stats Monitor\Shaders\GraphMobile.shader" />
      <None Include="Assets\AssetStore\Inventory\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

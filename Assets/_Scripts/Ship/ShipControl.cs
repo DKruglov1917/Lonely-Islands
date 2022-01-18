@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipControl : MonoBehaviour
 {
     [SerializeField] private GameObject shipCamera, player, onFootCanvas;
+    [SerializeField] private OnBoardTrigger onBoardTrigger;
     private float moveForce = 10f;
     private float rotateForce = 25f;
 
@@ -32,7 +33,6 @@ public class ShipControl : MonoBehaviour
         }
         else
         {
-            // player.transform.position = new Vector3(0, 0, 0);
             player.SetActive(true);
             onFootCanvas.SetActive(true);
             shipCamera.SetActive(false);

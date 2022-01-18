@@ -26,7 +26,7 @@ public class PlotGenerator : MonoBehaviour
         {
             Character character;
 
-            character = Instantiate(characterPrefab, new Vector3(i * 2.0F, 1, 0), Quaternion.Euler(0, 180, 0));
+            character = Instantiate(characterPrefab, new Vector3(100 + i * 2.0F, 6, 160), Quaternion.Euler(0, 180, 0));
 
             character.CreateCharacter(i);
 
